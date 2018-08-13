@@ -12,6 +12,8 @@ var losses = 0;                                     //process - 2
     if (userGuess === computerChoice) {        //condition check - 1: checks if user and computer chose same letter
       console.log("well done!!");               //true
       wins++;
+      var winDiv = document.getElementById('win');
+      winDiv.innerHTML = 'wins' + wins;
       console.log("wins" + wins);
     }
     else                                        //false
@@ -23,9 +25,8 @@ var losses = 0;                                     //process - 2
     else
       console.log("Game Over");                 //false
     losses++;
+    console.log("computer's letter was: "+ computerChoice);
     // newGame();
     //call fnction from guesses left
-
-
   }
 // }
